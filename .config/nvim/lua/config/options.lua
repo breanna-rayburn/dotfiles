@@ -22,21 +22,21 @@ local options = {
 	cindent = true,
 	autoindent = false,
 	tabstop = 2, --visual width of tab
-	shiftwidth = 2 --number of spaces to use for each step of auto indent
+	shiftwidth = 2, --number of spaces to use for each step of auto indent
 
-	--foldmethod = "expr",
-	--foldlevel = 99, --disable folding, lower #s enable
-	--foldexpr = "nvim_treesitter#foldexpr()",
+	foldmethod = "expr",
+	foldlevel = 99, --disable folding, lower #s enable
+	foldexpr = "nvim_treesitter#foldexpr()",
 	
-	--termguicolors = true,
+	termguicolors = true,
 
-	--ignorecase = true, --ignore case while searching
-	--smartcase = true, --but do not ignore if caps are used
+	ignorecase = true, --ignore case while searching
+	smartcase = true, --but do not ignore if caps are used
 
-	--conceallevel = 2, --markdown conceal
-	--concealcursor = "nc",
+	conceallevel = 2, --markdown conceal
+	concealcursor = "nc",
 
-	--splitkeep = 'screen', --stablizie window open/close
+	splitkeep = 'screen', --stablizie window open/close
 }
 
 for k, v in pairs(options) do
