@@ -10,6 +10,9 @@ local Plug = vim.fn['plug#']
 
 vim.call('plug#begin')
 
+Plug('nvim-tree/nvim-web-devicons') --pretty icons
+Plug('lewis6991/gitsigns.nvim') --gitsigns
+Plug('nvim-lualine/lualine.nvim') --statusline
 Plug('nvim-treesitter/nvim-treesitter') --improved syntax
 Plug('nvim-tree/nvim-tree.lua') --file explorer
 Plug('windwp/nvim-autopairs') --autopairs
@@ -21,6 +24,8 @@ require("config.mappings")
 require("config.theme")
 require("config.options")
 
+require("plugins.gitsigns")
+require("plugins.lualine")
 require("plugins.nvim-treesitter")
 require("plugins.nvim-tree")
 require("plugins.nvim-autopairs")
