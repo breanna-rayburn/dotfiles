@@ -1,0 +1,153 @@
+* {
+	font-size: 15px;
+	font-family: "Symbols Nerd Font", "CaskaydiaMono Nerd Font";
+}
+
+window#waybar {
+	all:unset;
+}
+
+.modules-left, .modules-center, .modules-right {
+    padding: 7px;
+    border-radius:10px;
+    background: alpha(#6E2B2F,.6);
+    color: #FFFFFF;
+    box-shadow: 0px 0px 2px rgba(0, 0, 0, .6);
+}
+
+.modules-left {
+	margin: 10px 0px 0px 10px;
+}
+
+.modules-center {
+	margin: 10px 10px 0px 10px;
+}
+
+.modules-right {
+	margin: 10px 10px 0px 0px;
+}
+
+tooltip {
+    background:alpha(#6E2b2F, 0.8);
+    color: #FFFFFF;
+}
+
+#clock:hover, #custom-pacman:hover, #custom-notification:hover,#bluetooth:hover,#network:hover,#battery:hover, #cpu:hover,#memory:hover,#temperature:hover{
+    transition: all .3s ease;
+    color:@color9;
+}
+
+#clock{
+    padding: 0px 5px;
+    color: @color7;
+    transition: all .3s ease;
+}
+
+#workspaces {
+    padding: 0px 5px;
+}
+
+#workspaces button {
+    all:unset;
+    padding: 0px 5px;
+    color: #ff9ca2;
+    transition: all .2s ease;
+}
+
+#workspaces button:hover {
+    color:rgba(0,0,0,0);
+    border: none;
+    text-shadow: 0px 0px 1.5px rgba(0, 0, 0, .5);
+    transition: all 1s ease;
+}
+
+#workspaces button.active {
+    color: rgba(255,255,255,1);
+    border: none;
+    text-shadow: 0px 0px 2px rgba(0, 0, 0, .5);
+}
+
+#workspaces button.empty {
+    color: rgba(0,0,0,.2);
+    border: none;
+    text-shadow: 0px 0px 1.5px rgba(0, 0, 0, .2);
+}
+
+#workspaces button.empty:hover {
+    color: rgba(0,0,0,0);
+    border: none;
+    text-shadow: 0px 0px 1.5px rgba(0, 0, 0, .5);
+    transition: all 1s ease;
+}
+
+#workspaces button.empty.active {
+    color: @color9;
+    border: none;
+    text-shadow: 0px 0px 2px rgba(0, 0, 0, .5);
+}
+
+#bluetooth{
+    padding: 0px 5px;
+    transition: all .3s ease;
+    color:@color7;
+
+}
+
+#network{
+    padding: 0px 5px;
+    transition: all .3s ease;
+    color:@color7;
+
+}
+
+#battery{
+    padding: 0px 5px;
+    transition: all .3s ease;
+    color:@color7;
+}
+
+#battery.charging {
+    color: #26A65B;
+}
+
+#battery.warning:not(.charging) {
+    color: #ffbe61;
+}
+
+#battery.critical:not(.charging) {
+    color: #f53c3c;
+    animation-name: blink;
+    animation-duration: 0.5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+#group-expand{
+    padding: 0px 5px;
+    transition: all .3s ease; 
+}
+
+#custom-expand{
+    padding: 0px 5px;
+    color:alpha(@foreground,.2);
+    text-shadow: 0px 0px 2px rgba(0, 0, 0, .7);
+    transition: all .3s ease; 
+}
+
+#custom-expand:hover{
+    color:rgba(255,255,255,.2);
+    text-shadow: 0px 0px 2px rgba(255, 255, 255, .5);
+}
+
+#cpu,#memory,#temperature{
+    padding: 0px 5px;
+    transition: all .3s ease; 
+    color:@color7;
+
+}
+
+#custom-endpoint{
+    color: alpha(#ff9ca2, 1.0);
+    text-shadow: 0px 0px 1.5px rgba(0, 0, 0, 1);
+}
