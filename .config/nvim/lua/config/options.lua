@@ -13,7 +13,8 @@ local options = {
 	cursorline = true, --highlight line
 	ttyfast = true, --faster scrolling
 	smoothscroll = true,
-	
+	fillchars = { eob = " " }, --fillchars blank
+
 	number = true, --numbering lines
 	relativenumber = true, --toggle bound to leader nn
 	numberwidth = 4,

@@ -8,9 +8,13 @@ end
 local vim = vim
 local Plug = vim.fn['plug#']
 
+vim.g.start_time = vim.fn.reltime()
+vim.loader.enable() --speed
+
 vim.call('plug#begin')
 
 Plug('nvim-tree/nvim-web-devicons') --pretty icons
+Plug('goolord/alpha-nvim') --pretty startup
 Plug('lewis6991/gitsigns.nvim') --gitsigns
 Plug('nvim-lualine/lualine.nvim') --statusline
 Plug('nvim-treesitter/nvim-treesitter') --improved syntax
@@ -24,6 +28,7 @@ require("config.mappings")
 require("config.theme")
 require("config.options")
 
+require("plugins.alpha")
 require("plugins.gitsigns")
 require("plugins.lualine")
 require("plugins.nvim-treesitter")
