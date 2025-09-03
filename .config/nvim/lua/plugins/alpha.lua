@@ -1,5 +1,6 @@
 local alpha = require('alpha')
 local dashboard = require("alpha.themes.dashboard")
+
 dashboard.section.header.val = {
             "       ████ ██████           █████      ██                     ",
             "      ███████████             █████                             ",
@@ -8,7 +9,6 @@ dashboard.section.header.val = {
             "    █████████ ██████████ █████████ █████ █████ ████ █████   ",
             "  ███████████ ███    ███ █████████ █████ █████ ████ █████  ",
             " ██████  █████████████████████ ████ █████ █████ ████ ██████  ",
-            "                                                                        ",
 }
 
 dashboard.section.buttons.val = {
@@ -32,7 +32,6 @@ dashboard.opts.layout = {
 	dashboard.section.buttons,
 	{ type = "padding", val = 2 },
 	dashboard.section.footer,
-
 }
 
 dashboard.section.buttons.opts.hl = "Keyword"
