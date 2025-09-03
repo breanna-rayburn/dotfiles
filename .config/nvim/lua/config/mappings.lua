@@ -14,3 +14,4 @@ map("n", "<leader>f", ":lua require('fzf-lua').files()<CR>") --search cwd
 map("n", "<leader>R", ":so %<CR>") --reload neovim config
 map("n", "<leader>P", ":PlugInstall<CR>") --vim-plug install
 map("n", "<leader>t", ":NvimTreeToggle<CR>") --toggle file explorer 
+map("n", "<leader>w", ":set wrap!<CR>") --toggle wrap
