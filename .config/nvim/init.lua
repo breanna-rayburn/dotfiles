@@ -27,6 +27,7 @@ vim.call('plug#end')
 require("config.mappings")
 require("config.theme")
 require("config.options")
+require("config.autocmd")
 
 require("plugins.alpha")
 require("plugins.gitsigns")
