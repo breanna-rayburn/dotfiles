@@ -1,4 +1,7 @@
+# load Hyprland from tty
 [[ $(tty) == /dev/tty1 ]] && exec Hyprland
+
+[[ -f ~/.zsh/nvm.zsh ]] && source ~/.zsh/nvm.zsh
 
 # alias
 alias bye='shutdown now'
