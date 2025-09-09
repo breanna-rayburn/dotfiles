@@ -12,5 +12,7 @@ zstyle ':completion:*' special-dirs true # force . and .. to show in cmp menu
 zstyle ':completion:*' squeeze-slashes false # explicit disable to allow /*/ expansion
 
 # History
+HISTSIZE=1000000
+SAVEHIST=1000000
 HISTFILE="$HOME/.cache/zsh_history" # move histfile to cache
 HISTCONTROL=ignoreboth # consecutive duplicates & commands starting with space are not saved
